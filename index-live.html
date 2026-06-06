@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>ExoMy Master List 2026 — Direktori Ahli Malaysia</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet"/>
+<style>
+:root{
+  --bg:#080f0b;--surface:#0f1812;--card:#131e15;
+  --border:#1e2d21;--border2:#243529;
+  --green:#3ddc84;--lime:#b5f06e;--gold:#f5c842;--red:#ff5c5c;--blue:#5cc8ff;--orange:#ff8c42;--purple:#b07aff;
+  --muted:#4d6e57;--text:#cde8d4;--dim:#7aaa88;--white:#f0f7f2;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;font-size:15px;min-height:100vh;overflow-x:hidden}
+
+header{position:sticky;top:0;z-index:200;background:rgba(8,15,11,.93);backdrop-filter:blur(16px);border-bottom:1px solid var(--border)}
+.hdr{max-width:1280px;margin:0 auto;padding:0 1.5rem;height:60px;display:flex;align-items:center;justify-content:space-between;gap:1rem}
+.logo{display:flex;align-items:center;gap:.6rem;text-decoration:none}
+.logo-mark{width:34px;height:34px;background:var(--green);border-radius:8px;display:grid;place-items:center;font-size:17px}
+.logo-name{font-family:'Syne',sans-serif;font-weight:800;font-size:1.05rem;color:var(--white);letter-spacing:-.02em}
+.logo-name span{color:var(--green)}
+.hdr-right{display:flex;align-items:center;gap:.6rem}
+.live-pill{display:flex;align-items:center;gap:.4rem;background:rgba(61,220,132,.08);border:1px solid rgba(61,220,132,.18);border-radius:999px;padding:.2rem .65rem;font-size:.68rem;color:var(--green);font-weight:600;letter-spacing:.04em}
+.live-dot{width:6px;height:6px;background:var(--green);border-radius:50%;animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
+.last-updated{font-size:.65rem;color:var(--muted);text-align:right;line-height:1.3}
+
+.hero{max-width:1280px;margin:0 auto;padding:2.5rem 1.5rem 1.5rem}
+.hero-chip{display:inline-flex;align-items:center;gap:.5rem;background:rgba(61,220,132,.07);border:1px solid rgba(61,220,132,.18);border-radius:999px;padding:.22rem .8rem;font-size:.7rem;font-weight:600;color:var(--green);letter-spacing:.07em;text-transform:uppercase;margin-bottom:1rem}
+h1{font-family:'Syne',sans-serif;font-weight:800;font-size:clamp(1.8rem,5vw,3rem);line-height:1.08;letter-spacing:-.035em;color:var(--white);margin-bottom:.5rem}
+h1 em{font-style:normal;color:var(--green)}
+.hero-sub{font-size:.9rem;color:var(--dim);max-width:480px;line-height:1.65;margin-bottom:1.8rem}
+.stats{display:flex;gap:2rem;flex-wrap:wrap}
+.stat{display:flex;flex-direction:column;gap:.08rem}
+.stat-n{font-family:'Syne',sans-serif;font-weight:700;font-size:1.7rem;line-height:1;color:var(--lime)}
+.stat-l{font-size:.68rem;color:var(--muted);text-transform:uppercase;letter-spacing:.07em}
+
+.tabs-wrap{position:sticky;top:60px;z-index:150;background:rgba(8,15,11,.95);backdrop-filter:blur(12px);border-bottom:1px solid var(--border)}
+.tabs{max-width:1280px;margin:0 auto;padding:0 1.5rem;display:flex;overflow-x:auto;scrollbar-width:none}
+.tabs::-webkit-scrollbar{display:none}
+.tab{display:flex;align-items:center;gap:.45rem;padding:.75rem 1rem;font-size:.78rem;font-weight:600;color:var(--muted);cursor:pointer;border-bottom:2px solid transparent;white-space:nowrap;transition:color .2s,border-color .2s;background:none;border-top:none;border-left:none;border-right:none;font-family:inherit}
+.tab:hover{color:var(--text)}
+.tab.active{color:var(--green);border-bottom-color:var(--green)}
+.tab-count{background:rgba(61,220,132,.12);color:var(--green);border-radius:999px;padding:.05rem .45rem;font-size:.65rem;font-weight:700}
+.tab.active .tab-count{background:var(--green);color:#0b1a0e}
+
+.controls{max-width:1280px;margin:0 auto;padding:1rem 1.5rem .75rem;display:flex;gap:.6rem;flex-wrap:wrap;align-items:center}
+.search-wrap{position:relative;flex:1;min-width:180px}
+.si{position:absolute;left:.85rem;top:50%;transform:translateY(-50%);color:var(--muted);font-size:.95rem;pointer-events:none}
+input[type=search]{width:100%;background:var(--surface);border:1px solid var(--border2);border-radius:10px;padding:.6rem .85rem .6rem 2.4rem;color:var(--text);font-family:inherit;font-size:.85rem;outline:none;transition:border-color .2s}
+input[type=search]:focus{border-color:var(--green)}
+input[type=search]::placeholder{color:var(--muted)}
+select{background:var(--surface);border:1px solid var(--border2);border-radius:10px;padding:.6rem 2rem .6rem .85rem;color:var(--text);font-family:inherit;font-size:.85rem;outline:none;cursor:pointer;-webkit-appearance:none;appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='10' viewBox='0 0 24 24' fill='none' stroke='%234d6e57' stroke-width='2.5'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right .65rem center;transition:border-color .2s}
+select:focus{border-color:var(--green)}
+.count-badge{font-size:.78rem;color:var(--muted);padding:.6rem .5rem;white-space:nowrap}
+
+.grid{max-width:1280px;margin:0 auto;padding:.5rem 1.5rem 5rem;display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:.9rem}
+
+.card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:1.2rem;display:flex;flex-direction:column;gap:.85rem;transition:border-color .25s,transform .25s,box-shadow .25s;animation:fadeUp .4s ease both;position:relative;overflow:hidden}
+@keyframes fadeUp{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+.card:hover{border-color:rgba(61,220,132,.3);transform:translateY(-3px);box-shadow:0 12px 40px rgba(0,0,0,.4)}
+.card[data-primary="Veterinary Service"]{border-top:2px solid var(--red)}
+.card[data-primary="Breeder"]{border-top:2px solid var(--lime)}
+.card[data-primary="Shop / Retailer"]{border-top:2px solid var(--blue)}
+.card[data-primary="Online Seller"]{border-top:2px solid var(--purple)}
+.card[data-primary="Feeder Supplier"]{border-top:2px solid var(--orange)}
+.card[data-primary="Equipment Supplier"]{border-top:2px solid var(--gold)}
+
+.card-hdr{display:flex;gap:.75rem;align-items:flex-start}
+.avatar{width:46px;height:46px;border-radius:11px;display:grid;place-items:center;font-family:'Syne',sans-serif;font-weight:800;font-size:1.1rem;color:#061008;flex-shrink:0;background:linear-gradient(135deg,var(--green),var(--lime))}
+.card[data-primary="Veterinary Service"] .avatar{background:linear-gradient(135deg,#ff5c5c,#ff9999);color:#1a0000}
+.card[data-primary="Shop / Retailer"] .avatar{background:linear-gradient(135deg,#5cc8ff,#a8e8ff);color:#001a2a}
+.card[data-primary="Feeder Supplier"] .avatar{background:linear-gradient(135deg,#ff8c42,#ffc084);color:#1a0800}
+.card[data-primary="Equipment Supplier"] .avatar{background:linear-gradient(135deg,#f5c842,#ffe89a);color:#1a1000}
+.card-info{flex:1;min-width:0}
+.card-name{font-family:'Syne',sans-serif;font-weight:700;font-size:.98rem;color:var(--white);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;margin-bottom:.18rem}
+.card-owner{font-size:.75rem;color:var(--muted)}
+
+.badges{display:flex;flex-wrap:wrap;gap:.35rem}
+.badge{display:inline-flex;align-items:center;gap:.25rem;border-radius:6px;padding:.18rem .5rem;font-size:.68rem;font-weight:600}
+.badge-loc{background:rgba(181,240,110,.08);border:1px solid rgba(181,240,110,.15);color:var(--lime)}
+.badge-type{background:rgba(61,220,132,.08);border:1px solid rgba(61,220,132,.14);color:var(--green)}
+.badge-ship{background:rgba(92,200,255,.08);border:1px solid rgba(92,200,255,.14);color:var(--blue)}
+.badge-year{background:rgba(245,200,66,.07);border:1px solid rgba(245,200,66,.14);color:var(--gold)}
+.badge-permit{background:rgba(176,122,255,.08);border:1px solid rgba(176,122,255,.14);color:var(--purple)}
+
+.species-row{display:flex;flex-wrap:wrap;gap:.3rem}
+.sp-tag{background:rgba(255,255,255,.04);border:1px solid var(--border2);border-radius:5px;padding:.14rem .45rem;font-size:.66rem;color:var(--dim)}
+
+.desc{font-size:.8rem;color:var(--dim);line-height:1.6;border-top:1px solid var(--border);padding-top:.85rem;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.addr{font-size:.75rem;color:var(--muted);display:flex;gap:.35rem;align-items:flex-start;line-height:1.5}
+
+.links{display:flex;gap:.4rem;flex-wrap:wrap;border-top:1px solid var(--border);padding-top:.85rem}
+.lnk{display:inline-flex;align-items:center;gap:.3rem;padding:.3rem .65rem;border-radius:7px;font-size:.72rem;font-weight:500;text-decoration:none;border:1px solid var(--border2);color:var(--dim);transition:background .15s,color .15s;white-space:nowrap}
+.lnk:hover{background:var(--border2);color:var(--text)}
+.lnk.primary{background:rgba(61,220,132,.1);border-color:rgba(61,220,132,.25);color:var(--green)}
+.lnk.primary:hover{background:rgba(61,220,132,.2)}
+.lnk.wa{background:rgba(37,211,102,.1);border-color:rgba(37,211,102,.25);color:#25d366}
+
+.section-heading{grid-column:1/-1;display:flex;align-items:center;gap:.75rem;padding:.25rem 0 .1rem;margin-top:.5rem}
+.section-heading:first-child{margin-top:0}
+.sh-icon{font-size:1.3rem}
+.sh-title{font-family:'Syne',sans-serif;font-weight:700;font-size:1rem;color:var(--white)}
+.sh-line{flex:1;height:1px;background:var(--border)}
+.sh-n{font-size:.72rem;color:var(--muted)}
+
+.state-box{grid-column:1/-1;text-align:center;padding:5rem 2rem;color:var(--muted)}
+.state-box .ico{font-size:2.5rem;margin-bottom:.75rem}
+.spinner{width:32px;height:32px;border:3px solid var(--border2);border-top-color:var(--green);border-radius:50%;animation:spin .7s linear infinite;margin:0 auto .75rem}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+footer{border-top:1px solid var(--border);text-align:center;padding:2rem 1rem;font-size:.75rem;color:var(--muted)}
+footer a{color:var(--green);text-decoration:none}
+
+@media(max-width:640px){
+  .grid{grid-template-columns:1fr}
+  .stats{gap:1.2rem}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="hdr">
+    <a class="logo" href="#">
+      <div class="logo-mark">🦎</div>
+      <div class="logo-name">Exo<span>My</span></div>
+    </a>
+    <div class="hdr-right">
+      <div class="live-pill"><div class="live-dot"></div> LIVE</div>
+      <div class="last-updated" id="lastUpdated">—</div>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-chip">🌿 Direktori Komuniti Rasmi</div>
+  <h1>Exotic Pet Community<br><em>Malaysia</em> 2026</h1>
+  <p class="hero-sub">Senarai lengkap peniaga, penternak, klinik, dan pembekal haiwan eksotik yang berdaftar dalam komuniti ExoMy Malaysia.</p>
+  <div class="stats">
+    <div class="stat"><span class="stat-n" id="s-total">—</span><span class="stat-l">Ahli Berdaftar</span></div>
+    <div class="stat"><span class="stat-n" id="s-states">—</span><span class="stat-l">Negeri</span></div>
+    <div class="stat"><span class="stat-n" id="s-ship">—</span><span class="stat-l">Ada Penghantaran</span></div>
+    <div class="stat"><span class="stat-n" id="s-vet">—</span><span class="stat-l">Klinik Eksotik</span></div>
+  </div>
+</section>
+
+<div class="tabs-wrap">
+  <div class="tabs" id="tabs">
+    <button class="tab active" onclick="setTab('all',this)">🗂 Semua <span class="tab-count" id="tc-all">—</span></button>
+    <button class="tab" onclick="setTab('breeder',this)">🥚 Breeder <span class="tab-count" id="tc-breeder">—</span></button>
+    <button class="tab" onclick="setTab('seller',this)">🏪 Seller / Kedai <span class="tab-count" id="tc-seller">—</span></button>
+    <button class="tab" onclick="setTab('feeder',this)">🦗 Feeder Supplier <span class="tab-count" id="tc-feeder">—</span></button>
+    <button class="tab" onclick="setTab('equipment',this)">🔧 Equipment <span class="tab-count" id="tc-equipment">—</span></button>
+    <button class="tab" onclick="setTab('vet',this)">🏥 Veterinary <span class="tab-count" id="tc-vet">—</span></button>
+    <button class="tab" onclick="setTab('boarding',this)">🏠 Boarding <span class="tab-count" id="tc-boarding">—</span></button>
+  </div>
+</div>
+
+<div class="controls">
+  <div class="search-wrap">
+    <span class="si">🔍</span>
+    <input type="search" id="q" placeholder="Cari nama, spesies, lokasi…" oninput="render()"/>
+  </div>
+  <select id="fstate" onchange="render()"><option value="">Semua Negeri</option></select>
+  <select id="fship" onchange="render()">
+    <option value="">Semua</option>
+    <option value="Yes">Ada Penghantaran</option>
+    <option value="No">Walk-in Sahaja</option>
+  </select>
+  <span class="count-badge" id="rcount"></span>
+</div>
+
+<div class="grid" id="grid">
+  <div class="state-box"><div class="spinner"></div><p>Memuatkan direktori…</p></div>
+</div>
+
+<footer>
+  <p>© 2026 <a href="https://exomy.my" target="_blank">ExoMy — Exotic Pet Community Malaysia</a></p>
+  <p style="margin-top:.4rem">Data dikemaskini secara automatik • <a href="https://exomy.my" target="_blank">exomy.my</a></p>
+</footer>
+
+<script>
+// ── CONFIG ─────────────────────────────────────────
+// Point this to your GitHub raw data.json
+// Format: https://raw.githubusercontent.com/USERNAME/REPO/main/data.json
+const DATA_URL = "https://raw.githubusercontent.com/YOUR_USERNAME/exomy-directory/main/data.json";
+// ───────────────────────────────────────────────────
+
+const TAB_MAP = {
+  all:       null,
+  breeder:   ['Breeder'],
+  seller:    ['Shop / Retailer','Online Seller'],
+  feeder:    ['Feeder Supplier'],
+  equipment: ['Equipment Supplier','Custom Enclosure Builder'],
+  vet:       ['Veterinary Service'],
+  boarding:  ['Boarding Service'],
+};
+
+const CAT_CONFIG = {
+  'Veterinary Service': {icon:'🏥', label:'Veterinary & Klinik'},
+  'Breeder':            {icon:'🥚', label:'Breeder & Penternak'},
+  'Shop / Retailer':    {icon:'🏪', label:'Kedai & Seller'},
+  'Online Seller':      {icon:'📦', label:'Online Seller'},
+  'Feeder Supplier':    {icon:'🦗', label:'Feeder Supplier'},
+  'Equipment Supplier': {icon:'🔧', label:'Equipment & Aksesori'},
+  'Custom Enclosure Builder': {icon:'🔧', label:'Custom Enclosure'},
+  'Boarding Service':   {icon:'🏠', label:'Boarding Service'},
+};
+
+const CAT_ORDER = ['Veterinary Service','Breeder','Shop / Retailer','Online Seller','Feeder Supplier','Equipment Supplier','Boarding Service'];
+
+let MEMBERS = [];
+let activeTab = 'all';
+
+function setTab(tab, el){
+  activeTab = tab;
+  document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
+  el.classList.add('active');
+  render();
+}
+
+function initials(n){ return n.split(' ').slice(0,2).map(w=>w[0]||'').join('').toUpperCase()||'?' }
+
+function normalizeUrl(url){
+  if(!url) return null;
+  if(url.startsWith('http')) return url;
+  if(url.includes('.com/')) return 'https://'+url;
+  return null;
+}
+
+function igUrl(val){
+  if(!val) return null;
+  if(val.startsWith('http')) return val;
+  const handle = val.replace('@','');
+  return handle ? `https://instagram.com/${handle}` : null;
+}
+
+function buildCard(m, idx){
+  const delay  = (idx%12)*45;
+  const primary = m.types[0]||'';
+
+  let badges = '';
+  if(m.state)   badges+=`<span class="badge badge-loc">📍 ${m.state}${m.city?', '+m.city:''}</span>`;
+  if(m.yearEst) badges+=`<span class="badge badge-year">Est. ${m.yearEst}</span>`;
+  if(m.shipping==='Yes') badges+=`<span class="badge badge-ship">✈️ Penghantaran</span>`;
+  if(m.permits==='Yes')  badges+=`<span class="badge badge-permit">✅ Permit</span>`;
+
+  const typeTags = m.types.slice(0,4).map(t=>`<span class="badge badge-type">${t}</span>`).join('')
+    + (m.otherType?`<span class="badge badge-type">${m.otherType}</span>`:'');
+
+  const spList = [...(m.species||[]).filter(s=>s!=='Other')];
+  if(m.speciesOther&&!['','-','No','nan'].includes(m.speciesOther)) spList.push(m.speciesOther);
+  const spTags = spList.slice(0,6).map(s=>`<span class="sp-tag">${s}</span>`).join('');
+
+  const addrHtml = m.address
+    ? `<div class="addr">📌 <span>${m.address.replace(/\n/g,', ')}</span></div>` : '';
+
+  let links = '';
+  const ph = (m.phone||'').replace(/[\s\-]/g,'').replace(/^\+60/,'60');
+  if(ph) links+=`<a class="lnk wa" href="https://wa.me/${ph}" target="_blank">💬 WhatsApp</a>`;
+
+  const pl = normalizeUrl(m.primaryLink);
+  if(pl && !pl.includes('wa.me')) links+=`<a class="lnk primary" href="${pl}" target="_blank">🔗 Pautan Utama</a>`;
+
+  const ig = igUrl(m.instagram);
+  if(ig) links+=`<a class="lnk" href="${ig}" target="_blank">📸 Instagram</a>`;
+  if(normalizeUrl(m.facebook)) links+=`<a class="lnk" href="${normalizeUrl(m.facebook)}" target="_blank">📘 Facebook</a>`;
+  if(normalizeUrl(m.tiktok))   links+=`<a class="lnk" href="${normalizeUrl(m.tiktok)}" target="_blank">🎵 TikTok</a>`;
+  if(normalizeUrl(m.threads))  links+=`<a class="lnk" href="${normalizeUrl(m.threads)}" target="_blank">🧵 Threads</a>`;
+  if(normalizeUrl(m.website))  links+=`<a class="lnk" href="${normalizeUrl(m.website)}" target="_blank">🌐 Website</a>`;
+
+  return `
+  <article class="card" data-primary="${primary}" style="animation-delay:${delay}ms">
+    <div class="card-hdr">
+      <div class="avatar">${initials(m.name)}</div>
+      <div class="card-info">
+        <div class="card-name">${m.name}</div>
+        <div class="card-owner">${m.owner||''}</div>
+      </div>
+    </div>
+    ${badges?`<div class="badges">${badges}</div>`:''}
+    ${typeTags?`<div class="badges">${typeTags}</div>`:''}
+    ${spTags?`<div class="species-row">${spTags}</div>`:''}
+    ${m.description?`<div class="desc">${m.description}</div>`:''}
+    ${addrHtml}
+    ${links?`<div class="links">${links}</div>`:''}
+  </article>`;
+}
+
+function filterMembers(){
+  const q      = document.getElementById('q').value.toLowerCase();
+  const fstate = document.getElementById('fstate').value;
+  const fship  = document.getElementById('fship').value;
+  const tFilter = TAB_MAP[activeTab];
+
+  return MEMBERS.filter(m=>{
+    if(tFilter && !tFilter.some(t=>m.types.includes(t))) return false;
+    if(fstate && m.state!==fstate) return false;
+    if(fship  && m.shipping!==fship) return false;
+    if(q){
+      const hay = [m.name,m.owner,m.state,m.city,m.description,...(m.types||[]),...(m.species||[]),m.speciesOther,m.otherType].join(' ').toLowerCase();
+      if(!hay.includes(q)) return false;
+    }
+    return true;
+  });
+}
+
+function render(){
+  const filtered = filterMembers();
+  const grid = document.getElementById('grid');
+  document.getElementById('rcount').textContent = `${filtered.length} ahli`;
+
+  if(!filtered.length){
+    grid.innerHTML=`<div class="state-box"><div class="ico">🔍</div><p>Tiada ahli ditemui.</p></div>`;
+    return;
+  }
+
+  if(activeTab==='all'){
+    const groups = {};
+    filtered.forEach(m=>{ const k=m.types[0]||'Other'; (groups[k]||(groups[k]=[])).push(m); });
+    let html='';
+    const seen=new Set();
+    CAT_ORDER.forEach(cat=>{
+      if(!groups[cat]) return;
+      const cfg = CAT_CONFIG[cat]||{icon:'📌',label:cat};
+      html+=`<div class="section-heading"><span class="sh-icon">${cfg.icon}</span><span class="sh-title">${cfg.label}</span><div class="sh-line"></div><span class="sh-n">${groups[cat].length}</span></div>`;
+      groups[cat].forEach((m,i)=>{ html+=buildCard(m,i); seen.add(m.name); });
+    });
+    filtered.filter(m=>!seen.has(m.name)).forEach((m,i)=>{ html+=buildCard(m,i); });
+    grid.innerHTML=html;
+  } else {
+    grid.innerHTML=filtered.map((m,i)=>buildCard(m,i)).join('');
+  }
+}
+
+function updateCounts(){
+  const prev=activeTab;
+  Object.keys(TAB_MAP).forEach(tab=>{
+    activeTab=tab;
+    const n=filterMembers().length;
+    const el=document.getElementById('tc-'+tab);
+    if(el) el.textContent=n;
+  });
+  activeTab=prev;
+}
+
+function updateStats(){
+  const states=[...new Set(MEMBERS.map(m=>m.state).filter(Boolean))];
+  document.getElementById('s-total').textContent  = MEMBERS.length;
+  document.getElementById('s-states').textContent = states.length;
+  document.getElementById('s-ship').textContent   = MEMBERS.filter(m=>m.shipping==='Yes').length;
+  document.getElementById('s-vet').textContent    = MEMBERS.filter(m=>m.types.includes('Veterinary Service')).length;
+
+  // Populate state dropdown
+  const sel = document.getElementById('fstate');
+  sel.innerHTML='<option value="">Semua Negeri</option>';
+  states.sort().forEach(s=>{ const o=document.createElement('option'); o.value=s; o.textContent=s; sel.appendChild(o); });
+}
+
+function formatDate(iso){
+  if(!iso) return '';
+  const d=new Date(iso);
+  return d.toLocaleDateString('ms-MY',{day:'numeric',month:'short',year:'numeric'})+' '+d.toLocaleTimeString('ms-MY',{hour:'2-digit',minute:'2-digit'});
+}
+
+async function loadData(){
+  try{
+    // Cache-busting so GitHub Pages always serves fresh data
+    const res  = await fetch(DATA_URL + '?t=' + Date.now());
+    if(!res.ok) throw new Error('HTTP '+res.status);
+    const data = await res.json();
+    MEMBERS = data.members || [];
+
+    const lu = document.getElementById('lastUpdated');
+    if(data.lastUpdated){
+      lu.innerHTML = `Dikemaskini<br>${formatDate(data.lastUpdated)}`;
+    }
+
+    updateStats();
+    updateCounts();
+    render();
+  } catch(e){
+    document.getElementById('grid').innerHTML=`
+      <div class="state-box">
+        <div class="ico">⚠️</div>
+        <p>Gagal memuatkan data.<br><small>Pastikan DATA_URL betul dan data.json wujud dalam repo.</small></p>
+      </div>`;
+    console.error(e);
+  }
+}
+
+loadData();
+// Auto-refresh every 5 minutes
+setInterval(loadData, 5*60*1000);
+</script>
+</body>
+</html>
