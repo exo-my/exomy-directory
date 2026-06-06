@@ -1,9 +1,14 @@
-
 <!DOCTYPE html>
 <html lang="ms">
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="description" content="Direktori rasmi komuniti haiwan eksotik Malaysia. Cari breeder, seller, veterinar dan pembekal eksotik seluruh Malaysia."/>
+<meta property="og:title" content="ExoMy Master List 2026"/>
+<meta property="og:description" content="Direktori komuniti haiwan eksotik Malaysia"/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://exo-my.github.io/exomy-directory/"/>
+<meta name="robots" content="index,follow"/>
 <title>ExoMy Master List 2026 — Direktori Ahli Malaysia</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet"/>
@@ -172,7 +177,12 @@ footer a{color:var(--green);text-decoration:none}
     <option value="Yes">Ada Penghantaran</option>
     <option value="No">Walk-in Sahaja</option>
   </select>
-  <span class="count-badge" id="rcount"></span>
+  <select id="sortBy" onchange="render()">
+<option value="name">Nama A-Z</option>
+<option value="newest">Terbaru</option>
+<option value="oldest">Terlama</option>
+</select>
+<span class="count-badge" id="rcount"></span>
 </div>
 
 <div class="grid" id="grid">
@@ -180,8 +190,9 @@ footer a{color:var(--green);text-decoration:none}
 </div>
 
 <footer>
-  <p>© 2026 <a href="https://exomy.my" target="_blank">ExoMy — Exotic Pet Community Malaysia</a></p>
-  <p style="margin-top:.4rem">Data dikemaskini secara automatik • <a href="https://exomy.my" target="_blank">exomy.my</a></p>
+<p>© 2026 ExoMy Malaysia</p>
+<p style="margin-top:.4rem">Berhobi dengan Selamat dan Berilmu.</p>
+<p style="margin-top:.4rem">Data dikemaskini secara automatik</p>
 </footer>
 
 <script>
@@ -216,6 +227,26 @@ const CAT_ORDER = ['Veterinary Service','Breeder','Shop / Retailer','Online Sell
 
 let MEMBERS = [];
 let activeTab = 'all';
+
+function escapeHtml(str=''){
+ return String(str)
+ .replace(/&/g,'&amp;')
+ .replace(/</g,'&lt;')
+ .replace(/>/g,'&gt;')
+ .replace(/"/g,'&quot;')
+ .replace(/'/g,'&#039;');
+}
+
+function safeArray(arr){
+ return Array.isArray(arr) ? arr : [];
+}
+
+function normalizePhone(phone=''){
+ let p = String(phone).replace(/\D/g,'');
+ if(p.startsWith('0')) p='6'+p;
+ return p.startsWith('60') ? p : '';
+}
+
 
 function setTab(tab, el){
   activeTab = tab;
@@ -261,6 +292,7 @@ function buildCard(m, idx){
     ? `<div class="addr">📌 <span>${m.address.replace(/\n/g,', ')}</span></div>` : '';
 
   let links = '';
+  const mapsLink = m.address ? `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(m.address)}` : null;
   const ph = (m.phone||'').replace(/[\s\-]/g,'').replace(/^\+60/,'60');
   if(ph) links+=`<a class="lnk wa" href="https://wa.me/${ph}" target="_blank">💬 WhatsApp</a>`;
 
@@ -273,6 +305,7 @@ function buildCard(m, idx){
   if(normalizeUrl(m.tiktok))   links+=`<a class="lnk" href="${normalizeUrl(m.tiktok)}" target="_blank">🎵 TikTok</a>`;
   if(normalizeUrl(m.threads))  links+=`<a class="lnk" href="${normalizeUrl(m.threads)}" target="_blank">🧵 Threads</a>`;
   if(normalizeUrl(m.website))  links+=`<a class="lnk" href="${normalizeUrl(m.website)}" target="_blank">🌐 Website</a>`;
+  if(mapsLink) links+=`<a class="lnk" href="${mapsLink}" target="_blank">🗺 Maps</a>`;
 
   return `
   <article class="card" data-primary="${primary}" style="animation-delay:${delay}ms">
@@ -400,9 +433,3 @@ setInterval(loadData, 5*60*1000);
 </script>
 </body>
 </html>
-HTMLEOF
-echo "Done"
-Output
-
-Done
-
