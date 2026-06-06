@@ -1,0 +1,2 @@
+# exomydir
+ExoMy Directory
