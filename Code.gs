@@ -3,8 +3,8 @@
 //  Paste this in Extensions → Apps Script
 // ═══════════════════════════════════════════════
 
-var GITHUB_TOKEN  = "ghp_YOUR_TOKEN_HERE";
-var GITHUB_OWNER  = "YOUR_GITHUB_USERNAME";
+var GITHUB_TOKEN  = "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";
+var GITHUB_OWNER  = "exo-my";
 var GITHUB_REPO   = "exomy-directory";
 var GITHUB_FILE   = "data.json";
 var GITHUB_BRANCH = "main";
