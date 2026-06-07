@@ -1,1 +1,303 @@
-{}
+{
+  "members": [
+    {
+      "name": "abang dragon",
+      "owner": "hadi koh",
+      "bizType": "Physical Store",
+      "types": [
+        "Breeder, Equipment Supplier, Custom Enclosure Builder"
+      ],
+      "otherType": "",
+      "yearEst": "2025",
+      "description": "Abang Dragon is a bearded dragon specialist providing complete reptile solutions, including standard and custom enclosures, lighting systems, bedding, accessories, and premium pellet food to help your dragon thrive.",
+      "species": [
+        "Other"
+      ],
+      "speciesOther": "bearded dragon",
+      "state": "Kuala Lumpur",
+      "city": "seputeh / mid valley",
+      "address": "no11, lorong permai, off jalan syed putra, taman persiaran desa.",
+      "coverage": [
+        "Local Area Only"
+      ],
+      "shipping": "No",
+      "facebook": "",
+      "instagram": "abangdragonreptile",
+      "tiktok": "",
+      "threads": "",
+      "website": "",
+      "primaryLink": "",
+      "phone": "01110138484",
+      "email": "myartfactory3155@gmail.com",
+      "permits": "No",
+      "verifiedWanted": "Maybe",
+      "updatedAt": "2026-06-07T07:58:41.931Z"
+    },
+    {
+      "name": "ScapeLab",
+      "owner": "Abdul Hadi Muqti",
+      "bizType": "Both Physical & Online",
+      "types": [
+        "Shop / Retailer, Online Seller"
+      ],
+      "otherType": "",
+      "yearEst": "2026",
+      "description": "We are selling Exotic Animals, doing plaudarium and terrarium",
+      "species": [
+        "Geckos, Snakes, Lizard, Frogs & Amphibians, Aquatic Species, Exotic Pet Supplies"
+      ],
+      "speciesOther": "No",
+      "state": "Selangor",
+      "city": "Petaling jaya",
+      "address": "15-1 Jalan PJS 5/28B Pusat Dagangan, 46150 Petaling Jaya, Selangor",
+      "coverage": [
+        "Local Area Only, Peninsular Malaysia"
+      ],
+      "shipping": "Yes",
+      "facebook": "",
+      "instagram": "",
+      "tiktok": "https://www.tiktok.com/@scapelab?_r=1&_t=ZS-96pqnyBJ4sO",
+      "threads": "",
+      "website": "",
+      "primaryLink": "https://share.google/ryhTXrT7ZDN9fQOjA",
+      "phone": "0198603008",
+      "email": "scapelab.my@gmail.com",
+      "permits": "No",
+      "verifiedWanted": "Yes",
+      "updatedAt": "2026-06-07T07:58:41.931Z"
+    },
+    {
+      "name": "ThirtyOne Exotics",
+      "owner": "Hafizi",
+      "bizType": "Both Physical & Online",
+      "types": [
+        "Shop / Retailer, Online Seller, Equipment Supplier, Feeder Supplier, Other"
+      ],
+      "otherType": "Mobile Petting Zoo",
+      "yearEst": "2023",
+      "description": "Founded in 2023, we specialize in exotic pets, with a passion for pet frogs and amphibian care. We offer healthy exotic pets, captive-bred feeder mice, quality enclosures, and a wide range of accessories to help your pets thrive. Whether you?re a beginner or an experienced keeper, we?re committed to providing trusted products, expert knowledge, and excellent customer service for all your exotic pet needs.",
+      "species": [
+        "Frogs & Amphibians, Other"
+      ],
+      "speciesOther": "Mobile petting zoo",
+      "state": "Selangor",
+      "city": "Sepang",
+      "address": "27A Jalan Kenanga 1/1\nSalak Perdana Business Park\nBdr Baru Salak Tinggi\n43900 Sepang Selangor",
+      "coverage": [
+        "Local Area Only, Statewide, Peninsular Malaysia"
+      ],
+      "shipping": "Yes",
+      "facebook": "https://www.facebook.com/share/1ShPG2cGHQ/?mibextid=wwXIfr",
+      "instagram": "https://www.instagram.com/thirtyone.exotics?igsh=OG85Y3o1N3M4djFi&utm_source=qr",
+      "tiktok": "https://www.tiktok.com/@thirtyoneexoticshouse?_r=1&_t=ZS-96ptOTujMRj",
+      "threads": "https://www.threads.com/@thirtyone.exotics?igshid=NTc4MTIwNjQ2YQ==",
+      "website": "",
+      "primaryLink": "https://wa.me/message/JQSMNIRHJEKRL1",
+      "phone": "014-9102308",
+      "email": "thirtyoneexotic@gmail.com",
+      "permits": "Maybe",
+      "verifiedWanted": "Yes",
+      "updatedAt": "2026-06-07T07:58:41.931Z"
+    },
+    {
+      "name": "EXOPET VETERINARY CLINIC",
+      "owner": "Dr. Asyikin Haron DVM, MVM",
+      "bizType": "Physical Store",
+      "types": [
+        "Veterinary Service, Educational Organization"
+      ],
+      "otherType": "",
+      "yearEst": "2020",
+      "description": "We provide veterinary care for birds, exotic pets, and cats. Dr. Asyikin is a member of the international organisations, Association of Exotic Mammal Veterinarians (AEMV) and Association of Avian Veterinarians (AAV).",
+      "species": [
+        "Geckos, Snakes, Lizard, Tortoises & Turtles, Birds, Parrots, Raptors, Exotic Mammals, Veterinary"
+      ],
+      "speciesOther": "-",
+      "state": "Johor",
+      "city": "Johor Bahru",
+      "address": "EXOPET VETERINARY CLINIC, 56 Jalan Setia Tropika 1/7, Taman Setia Tropika, 81200 Johor Bahru, Johor",
+      "coverage": [
+        "Local Area Only"
+      ],
+      "shipping": "No",
+      "facebook": "https://www.facebook.com/share/18dm55aJbJ/?mibextid=wwXIfr",
+      "instagram": "https://www.instagram.com/exopetvc?igsh=MTB2ZTF0Z3VpNGVyNg==",
+      "tiktok": "https://www.tiktok.com/@exopetvc?_r=1&_t=ZS-96pulYrufYY",
+      "threads": "",
+      "website": "https://www.google.com/search?client=safari&hs=5hzp&sca_esv=9a0266635dee84b9&hl=en-my&sxsrf=ANbL-n55xOcgMOYRW5h7ju2kluXQ2eM96w%3A1780281847340&kgmid=%2Fg%2F11lg7x845w&q=EXOPET%20VETERINARY%20CLINIC&shem=rimspwouoe&shndl=30&source=sh%2Fx%2Floc%2Fact%2Fm1%2F3&kgs=dfda1e3e4cb4b2e1",
+      "primaryLink": "https://www.google.com/search?client=safari&hs=5hzp&sca_esv=9a0266635dee84b9&hl=en-my&sxsrf=ANbL-n55xOcgMOYRW5h7ju2kluXQ2eM96w%3A1780281847340&kgmid=%2Fg%2F11lg7x845w&q=EXOPET%20VETERINARY%20CLINIC&shem=rimspwouoe&shndl=30&source=sh%2Fx%2Floc%2Fact%2Fm1%2F3&kgs=dfda1e3e4cb4b2e1",
+      "phone": "013 735 7566 / 07 244 2321",
+      "email": "exopetveterinary@gmail.com",
+      "permits": "Yes",
+      "verifiedWanted": "Yes",
+      "updatedAt": "2026-06-07T07:58:41.931Z"
+    },
+    {
+      "name": "ARP CONSTRICTORS (M) SDN BHD",
+      "owner": "Arawin Raj Pillai",
+      "bizType": "Both Physical & Online",
+      "types": [
+        "Breeder, Shop / Retailer, Online Seller, Importer, Exporter, Equipment Supplier, Feeder Supplier, Boarding Service, Educational Organization"
+      ],
+      "otherType": "",
+      "yearEst": "2010",
+      "description": "Welcome to ARP Constrictors, the largest ball python breeder in Southeast Asia! With years of experience and passion for reptiles, we specialize in breeding high-quality ball pythons, offering a wide variety of stunning morphs for collectors, hobbyists, and breeders.\n\nBeyond ball pythons, we also provide a diverse selection of reptiles and exotic pets, ensuring that every reptile enthusiast finds the perfect companion. Our commitment to ethical breeding, top-notch care, and customer satisfaction sets us apart as a trusted name in the industry.\n\nWhether you?re a seasoned reptile keeper or just starting, ARP Constrictors is your one-stop destination for high-quality reptiles and expert advice. Explore our collection today and experience the world of exotic pets like never!",
+      "species": [
+        "Geckos, Snakes, Lizard, Tortoises & Turtles, Parrots, Tarantulas, Exotic Pet Supplies"
+      ],
+      "speciesOther": "Ball? ?Python and other Exotic Pets",
+      "state": "Selangor",
+      "city": "Petaling Jaya",
+      "address": "Exotics By ARP\n286, Jalan SS9A/2, Sungai Way, 47300, Petaling Jaya, Selangor",
+      "coverage": [
+        "Statewide, Nationwide"
+      ],
+      "shipping": "Yes",
+      "facebook": "https://m.facebook.com/XoticsbyARP",
+      "instagram": "https://www.instagram.com/exoticsbyarp/",
+      "tiktok": "tiktok.com/@arpconstrictors",
+      "threads": "",
+      "website": "https://exoticpetsmalaysia.com/",
+      "primaryLink": "https://wa.me/message/N3WNSAIMT47TE1",
+      "phone": "0127282544",
+      "email": "arpconstrictors@gmail.com",
+      "permits": "Yes",
+      "verifiedWanted": "Yes",
+      "updatedAt": "2026-06-07T07:58:41.931Z"
+    },
+    {
+      "name": "Dubia Roaches MY",
+      "owner": "Zarin othman",
+      "bizType": "Online Store",
+      "types": [
+        "Breeder, Online Seller, Feeder Supplier"
+      ],
+      "otherType": "",
+      "yearEst": "2009",
+      "description": "We supply dubia roaches throughtout Malaysia.",
+      "species": [
+        "Other"
+      ],
+      "speciesOther": "Dubia Roaches needed",
+      "state": "Selangor",
+      "city": "Petaling jaya",
+      "address": "no walk. \nNo25, jalan ss2/92, 47300, petaling jaya, selangor.",
+      "coverage": [
+        "Nationwide"
+      ],
+      "shipping": "Yes",
+      "facebook": "",
+      "instagram": "",
+      "tiktok": "",
+      "threads": "",
+      "website": "https://www.dubiaroaches.my",
+      "primaryLink": "Our website",
+      "phone": "0173939983",
+      "email": "Orders@dubiaroachesmalaysia.my",
+      "permits": "No",
+      "verifiedWanted": "Yes",
+      "updatedAt": "2026-06-07T07:58:41.931Z"
+    },
+    {
+      "name": "WONDER PETSHOP",
+      "owner": "NAUFAL HAZIQ BIN ZULKHAIRI",
+      "bizType": "Both Physical & Online",
+      "types": [
+        "Breeder, Shop / Retailer, Online Seller, Feeder Supplier, Boarding Service, Educational Organization, Other"
+      ],
+      "otherType": "PETTING ZOO",
+      "yearEst": "2026",
+      "description": "- MENJUAL MAKANAN HAIWAN DAN AKSESORI HAIWAN \n-MENJUAL HAIWAN EXOTIC DAN UNGGAS \n-EXOTIC PET BOARDING",
+      "species": [
+        "Geckos, Snakes, Lizard, Tortoises & Turtles, Frogs & Amphibians, Birds, Parrots, Exotic Mammals, Exotic Pet Supplies"
+      ],
+      "speciesOther": "No",
+      "state": "Negeri Sembilan",
+      "city": "KUALA PILAH",
+      "address": "NO 16 JALAN JUASSEH SENTOSA 2 TAMAN JUASSEH SENTOSA 72500 KUALA PILAH NEGERI SEMBILAN",
+      "coverage": [
+        "Local Area Only, Peninsular Malaysia"
+      ],
+      "shipping": "Yes",
+      "facebook": "WONDER PETSHOP",
+      "instagram": "",
+      "tiktok": "WONDER PET SHOP",
+      "threads": "",
+      "website": "",
+      "primaryLink": "",
+      "phone": "0173915812",
+      "email": "naufalhz@gmail.com",
+      "permits": "Yes",
+      "verifiedWanted": "Yes",
+      "updatedAt": "2026-06-07T07:58:41.931Z"
+    },
+    {
+      "name": "Gecko Island",
+      "owner": "Kwan",
+      "bizType": "Online Store",
+      "types": [
+        "Breeder, Online Seller"
+      ],
+      "otherType": "",
+      "yearEst": "",
+      "description": "",
+      "species": [
+        "Geckos"
+      ],
+      "speciesOther": "Leopard gecko & african fat tailed gecko",
+      "state": "Terengganu",
+      "city": "",
+      "address": "",
+      "coverage": [
+        "Nationwide"
+      ],
+      "shipping": "Yes",
+      "facebook": "https://www.facebook.com/share/1Bmq7wchGh/?mibextid=wwXIfr",
+      "instagram": "https://www.instagram.com/geckoisland_?igsh=dmFmaG5tZXVqb2xv&utm_source=qr",
+      "tiktok": "https://www.tiktok.com/@geckoisland_?_r=1&_t=ZS-96u3ovSDVxA",
+      "threads": "",
+      "website": "",
+      "primaryLink": "",
+      "phone": "0169904555",
+      "email": "",
+      "permits": "",
+      "verifiedWanted": "Yes",
+      "updatedAt": "2026-06-07T07:58:41.931Z"
+    },
+    {
+      "name": "Avian & Exotic Animal Clinic (AVEX) UVH UPM",
+      "owner": "Faculty of Veterinary Medicine, Universiti Putra Malaysia / Luqman Abdul Samad",
+      "bizType": "Physical Store",
+      "types": [
+        "Veterinary Service, Educational Organization"
+      ],
+      "otherType": "",
+      "yearEst": "",
+      "description": "We provide veterinary consultation and both medical and surgical services for exotic animals. We have expertise and equipments to provide better exotic animal health and welfare.",
+      "species": [
+        "Geckos, Snakes, Lizard, Tortoises & Turtles, Frogs & Amphibians, Birds, Parrots, Raptors, Exotic Mammals, Veterinary"
+      ],
+      "speciesOther": "None",
+      "state": "Selangor",
+      "city": "Serdang",
+      "address": "Avian & Exotic Animal Clinic (AVEX), University Veterinary Hospital, Faculty of Veterinary Medicine, Universiti Putra Malaysia, 43400 Serdang, Selangor",
+      "coverage": [
+        "Local Area Only, Statewide, Peninsular Malaysia"
+      ],
+      "shipping": "No",
+      "facebook": "https://www.facebook.com/share/17v15QgRPP/",
+      "instagram": "https://www.instagram.com/uvh_upm?igsh=MWljaDVzODh4b2ZvOQ==",
+      "tiktok": "https://www.tiktok.com/@uvh_upm?_r=1&_t=ZS-96wKBKvZKXE",
+      "threads": "",
+      "website": "https://vet.upm.edu.my/veterinary_hospital-348",
+      "primaryLink": "https://share.google/W8gLpvJRWKt6UK91q",
+      "phone": "+60 3-9769 3955/3889/3981/3846",
+      "email": "klinikhaiwankesayangan.uvh@upm.edu.my",
+      "permits": "No",
+      "verifiedWanted": "Yes",
+      "updatedAt": "2026-06-07T07:58:41.932Z"
+    }
+  ],
+  "total": 9,
+  "lastUpdated": "2026-06-07T07:58:41.932Z"
+}
