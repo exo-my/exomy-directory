@@ -1,7 +1,7 @@
 {
   "version": "2.0",
-  "total": 9,
-  "lastUpdated": "2026-06-08T06:16:30.706Z",
+  "total": 10,
+  "lastUpdated": "2026-06-08T13:03:50.275Z",
   "members": [
     {
       "id": "abang-dragon",
@@ -42,7 +42,7 @@
       "verified": false,
       "profilePhoto": "",
       "coverPhoto": "",
-      "updatedAt": "2026-06-08T06:16:30.705Z"
+      "updatedAt": "2026-06-08T13:03:50.274Z"
     },
     {
       "id": "scapelab",
@@ -88,7 +88,7 @@
       "verified": true,
       "profilePhoto": "",
       "coverPhoto": "",
-      "updatedAt": "2026-06-08T06:16:30.706Z"
+      "updatedAt": "2026-06-08T13:03:50.275Z"
     },
     {
       "id": "thirtyone-exotics",
@@ -134,7 +134,7 @@
       "verified": true,
       "profilePhoto": "",
       "coverPhoto": "",
-      "updatedAt": "2026-06-08T06:16:30.706Z"
+      "updatedAt": "2026-06-08T13:03:50.275Z"
     },
     {
       "id": "exopet-veterinary-clinic",
@@ -182,7 +182,7 @@
       "verified": true,
       "profilePhoto": "",
       "coverPhoto": "",
-      "updatedAt": "2026-06-08T06:16:30.706Z"
+      "updatedAt": "2026-06-08T13:03:50.275Z"
     },
     {
       "id": "arp-constrictors-m-sdn-bhd",
@@ -236,7 +236,7 @@
       "verified": true,
       "profilePhoto": "",
       "coverPhoto": "",
-      "updatedAt": "2026-06-08T06:16:30.706Z"
+      "updatedAt": "2026-06-08T13:03:50.275Z"
     },
     {
       "id": "dubia-roaches-my",
@@ -277,7 +277,7 @@
       "verified": true,
       "profilePhoto": "",
       "coverPhoto": "",
-      "updatedAt": "2026-06-08T06:16:30.706Z"
+      "updatedAt": "2026-06-08T13:03:50.275Z"
     },
     {
       "id": "wonder-petshop",
@@ -331,7 +331,7 @@
       "verified": true,
       "profilePhoto": "",
       "coverPhoto": "",
-      "updatedAt": "2026-06-08T06:16:30.706Z"
+      "updatedAt": "2026-06-08T13:03:50.275Z"
     },
     {
       "id": "gecko-island",
@@ -371,7 +371,7 @@
       "verified": true,
       "profilePhoto": "",
       "coverPhoto": "",
-      "updatedAt": "2026-06-08T06:16:30.706Z"
+      "updatedAt": "2026-06-08T13:03:50.275Z"
     },
     {
       "id": "avian-exotic-animal-clinic-avex-uvh-upm",
@@ -422,7 +422,50 @@
       "verified": true,
       "profilePhoto": "",
       "coverPhoto": "",
-      "updatedAt": "2026-06-08T06:16:30.706Z"
+      "updatedAt": "2026-06-08T13:03:50.275Z"
+    },
+    {
+      "id": "iesyara-exotic-feeder",
+      "slug": "iesyara-exotic-feeder",
+      "name": "Iesyara Exotic Feeder",
+      "primaryCategory": "Breeder",
+      "categories": [
+        "Breeder",
+        "Online Seller",
+        "Feeder Supplier"
+      ],
+      "owner": "Azmi bin Othman",
+      "bizType": "Online Store",
+      "otherType": "",
+      "yearEst": "2021",
+      "description": "we breeding rodent for feeder purpose..\nwe have mice,asf & rat...",
+      "species": [
+        "Snakes",
+        "Other"
+      ],
+      "speciesOther": "rodent",
+      "state": "Melaka",
+      "city": "melaka tengah",
+      "address": "melaka raya,melaka.",
+      "coverage": [
+        "Local Area Only",
+        "Peninsular Malaysia"
+      ],
+      "shipping": "Yes",
+      "facebook": "https://m.facebook.com/iesyaraexoticfeeder/",
+      "instagram": "",
+      "tiktok": "https://www.tiktok.com/@iesyara_exoticfeeder?_r=1&_t=ZS-972X52SZrfg",
+      "threads": "",
+      "website": "",
+      "primaryLink": "https://www.tiktok.com/@iesyara_exoticfeeder?_r=1&_t=ZS-972X52SZrfg",
+      "phone": "Message Iesyara Exotic Feeder on WhatsApp. https://wa.me/601115550642",
+      "email": "",
+      "permits": "No",
+      "featured": false,
+      "verified": true,
+      "profilePhoto": "",
+      "coverPhoto": "",
+      "updatedAt": "2026-06-08T13:03:50.275Z"
     }
   ]
 }
