@@ -273,7 +273,7 @@ function igUrl(val){
 
 function buildCard(m, idx){
   const delay  = (idx%12)*45;
-  const primary = m.types[0]||'';
+  const primary = m.primaryCategory || '';
 
   let badges = '';
   if(m.state)   badges+=`<span class="badge badge-loc">📍 ${m.state}${m.city?', '+m.city:''}</span>`;
@@ -281,7 +281,7 @@ function buildCard(m, idx){
   if(m.shipping==='Yes') badges+=`<span class="badge badge-ship">✈️ Penghantaran</span>`;
   if(m.permits==='Yes')  badges+=`<span class="badge badge-permit">✅ Permit</span>`;
 
-  const typeTags = m.types.slice(0,4).map(t=>`<span class="badge badge-type">${t}</span>`).join('')
+  const typeTags = (m.categories || []).slice(0,4).map(t=>`<span class="badge badge-type">${t}</span>`).join('')
     + (m.otherType?`<span class="badge badge-type">${m.otherType}</span>`:'');
 
   const spList = [...(m.species||[]).filter(s=>s!=='Other')];
@@ -312,7 +312,7 @@ function buildCard(m, idx){
     <div class="card-hdr">
       <div class="avatar">${initials(m.name)}</div>
       <div class="card-info">
-        <div class="card-name">${m.name}</div>
+        <div class="card-name">${m.name}${m.featured ? " ⭐" : ""}${m.verified ? " ✅" : ""}</div>
         <div class="card-owner">${m.owner||''}</div>
       </div>
     </div>
@@ -332,11 +332,11 @@ function filterMembers(){
   const tFilter = TAB_MAP[activeTab];
 
   return MEMBERS.filter(m=>{
-    if(tFilter && !tFilter.some(t=>m.types.includes(t))) return false;
+    if(tFilter && !tFilter.some(t => (m.categories || []).includes(t))) return false;
     if(fstate && m.state!==fstate) return false;
     if(fship  && m.shipping!==fship) return false;
     if(q){
-      const hay = [m.name,m.owner,m.state,m.city,m.description,...(m.types||[]),...(m.species||[]),m.speciesOther,m.otherType].join(' ').toLowerCase();
+      const hay = [m.name,m.owner,m.state,m.city,m.description,...(m.categories||[]),...(m.species||[]),m.speciesOther,m.otherType].join(' ').toLowerCase();
       if(!hay.includes(q)) return false;
     }
     return true;
@@ -355,7 +355,7 @@ function render(){
 
   if(activeTab==='all'){
     const groups = {};
-    filtered.forEach(m=>{ const k=m.types[0]||'Other'; (groups[k]||(groups[k]=[])).push(m); });
+    filtered.forEach(m=>{ const k=m.primaryCategory || 'Other'; (groups[k]||(groups[k]=[])).push(m); });
     let html='';
     const seen=new Set();
     CAT_ORDER.forEach(cat=>{
@@ -387,7 +387,7 @@ function updateStats(){
   document.getElementById('s-total').textContent  = MEMBERS.length;
   document.getElementById('s-states').textContent = states.length;
   document.getElementById('s-ship').textContent   = MEMBERS.filter(m=>m.shipping==='Yes').length;
-  document.getElementById('s-vet').textContent    = MEMBERS.filter(m=>m.types.includes('Veterinary Service')).length;
+  document.getElementById('s-vet').textContent    = MEMBERS.filter(m => (m.categories || []).includes('Veterinary Service')).length;
 
   // Populate state dropdown
   const sel = document.getElementById('fstate');
