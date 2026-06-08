@@ -172,6 +172,9 @@ footer a{color:var(--green);text-decoration:none}
     <input type="search" id="q" placeholder="Cari nama, spesies, lokasi…" oninput="render()"/>
   </div>
   <select id="fstate" onchange="render()"><option value="">Semua Negeri</option></select>
+<select id="fspecies" onchange="render()">
+  <option value="">Semua Spesies</option>
+</select>
   <select id="fship" onchange="render()">
     <option value="">Semua</option>
     <option value="Yes">Ada Penghantaran</option>
@@ -328,12 +331,14 @@ function buildCard(m, idx){
 function filterMembers(){
   const q      = document.getElementById('q').value.toLowerCase();
   const fstate = document.getElementById('fstate').value;
+  const fspecies = document.getElementById('fspecies').value;
   const fship  = document.getElementById('fship').value;
   const tFilter = TAB_MAP[activeTab];
 
   return MEMBERS.filter(m=>{
     if(tFilter && !tFilter.some(t => (m.categories || []).includes(t))) return false;
     if(fstate && m.state!==fstate) return false;
+    if(fspecies && !(m.species || []).includes(fspecies)) return false;
     if(fship  && m.shipping!==fship) return false;
     if(q){
       const hay = [m.name,m.owner,m.state,m.city,m.description,...(m.categories||[]),...(m.species||[]),m.speciesOther,m.otherType].join(' ').toLowerCase();
@@ -384,6 +389,13 @@ function updateCounts(){
 
 function updateStats(){
   const states=[...new Set(MEMBERS.map(m=>m.state).filter(Boolean))];
+  const species = [
+  ...new Set(
+    MEMBERS.flatMap(
+      m => m.species || []
+    )
+  )
+].filter(Boolean);
   document.getElementById('s-total').textContent  = MEMBERS.length;
   document.getElementById('s-states').textContent = states.length;
   document.getElementById('s-ship').textContent   = MEMBERS.filter(m=>m.shipping==='Yes').length;
@@ -394,7 +406,23 @@ function updateStats(){
   sel.innerHTML='<option value="">Semua Negeri</option>';
   states.sort().forEach(s=>{ const o=document.createElement('option'); o.value=s; o.textContent=s; sel.appendChild(o); });
 }
+const spSel = document.getElementById('fspecies');
 
+spSel.innerHTML =
+  '<option value="">Semua Spesies</option>';
+
+species.sort().forEach(function(sp){
+
+  const o =
+    document.createElement('option');
+
+  o.value = sp;
+
+  o.textContent = sp;
+
+  spSel.appendChild(o);
+
+});
 function formatDate(iso){
   if(!iso) return '';
   const d=new Date(iso);
