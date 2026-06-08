@@ -389,13 +389,19 @@ function updateCounts(){
 
 function updateStats(){
   const states=[...new Set(MEMBERS.map(m=>m.state).filter(Boolean))];
-  const species = [
-  ...new Set(
-    MEMBERS.flatMap(
-      m => m.species || []
-    )
-  )
-].filter(Boolean);
+  const species = [];
+
+MEMBERS.forEach(function(m){
+
+  (m.species || []).forEach(function(sp){
+
+    if(sp && species.indexOf(sp) === -1){
+      species.push(sp);
+    }
+
+  });
+
+});.filter(Boolean);
   document.getElementById('s-total').textContent  = MEMBERS.length;
   document.getElementById('s-states').textContent = states.length;
   document.getElementById('s-ship').textContent   = MEMBERS.filter(m=>m.shipping==='Yes').length;
