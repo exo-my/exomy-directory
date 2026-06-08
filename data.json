@@ -1,12 +1,20 @@
 {
+  "version": "2.0",
+  "total": 9,
+  "lastUpdated": "2026-06-08T06:16:30.706Z",
   "members": [
     {
+      "id": "abang-dragon",
+      "slug": "abang-dragon",
       "name": "abang dragon",
+      "primaryCategory": "Breeder",
+      "categories": [
+        "Breeder",
+        "Equipment Supplier",
+        "Custom Enclosure Builder"
+      ],
       "owner": "hadi koh",
       "bizType": "Physical Store",
-      "types": [
-        "Breeder, Equipment Supplier, Custom Enclosure Builder"
-      ],
       "otherType": "",
       "yearEst": "2025",
       "description": "Abang Dragon is a bearded dragon specialist providing complete reptile solutions, including standard and custom enclosures, lighting systems, bedding, accessories, and premium pellet food to help your dragon thrive.",
@@ -30,28 +38,41 @@
       "phone": "01110138484",
       "email": "myartfactory3155@gmail.com",
       "permits": "No",
-      "verifiedWanted": "Maybe",
-      "updatedAt": "2026-06-07T07:58:41.931Z"
+      "featured": false,
+      "verified": false,
+      "profilePhoto": "",
+      "coverPhoto": "",
+      "updatedAt": "2026-06-08T06:16:30.705Z"
     },
     {
+      "id": "scapelab",
+      "slug": "scapelab",
       "name": "ScapeLab",
+      "primaryCategory": "Shop / Retailer",
+      "categories": [
+        "Shop / Retailer",
+        "Online Seller"
+      ],
       "owner": "Abdul Hadi Muqti",
       "bizType": "Both Physical & Online",
-      "types": [
-        "Shop / Retailer, Online Seller"
-      ],
       "otherType": "",
       "yearEst": "2026",
       "description": "We are selling Exotic Animals, doing plaudarium and terrarium",
       "species": [
-        "Geckos, Snakes, Lizard, Frogs & Amphibians, Aquatic Species, Exotic Pet Supplies"
+        "Geckos",
+        "Snakes",
+        "Lizard",
+        "Frogs & Amphibians",
+        "Aquatic Species",
+        "Exotic Pet Supplies"
       ],
       "speciesOther": "No",
       "state": "Selangor",
       "city": "Petaling jaya",
       "address": "15-1 Jalan PJS 5/28B Pusat Dagangan, 46150 Petaling Jaya, Selangor",
       "coverage": [
-        "Local Area Only, Peninsular Malaysia"
+        "Local Area Only",
+        "Peninsular Malaysia"
       ],
       "shipping": "Yes",
       "facebook": "",
@@ -63,28 +84,41 @@
       "phone": "0198603008",
       "email": "scapelab.my@gmail.com",
       "permits": "No",
-      "verifiedWanted": "Yes",
-      "updatedAt": "2026-06-07T07:58:41.931Z"
+      "featured": false,
+      "verified": true,
+      "profilePhoto": "",
+      "coverPhoto": "",
+      "updatedAt": "2026-06-08T06:16:30.706Z"
     },
     {
+      "id": "thirtyone-exotics",
+      "slug": "thirtyone-exotics",
       "name": "ThirtyOne Exotics",
+      "primaryCategory": "Shop / Retailer",
+      "categories": [
+        "Shop / Retailer",
+        "Online Seller",
+        "Equipment Supplier",
+        "Feeder Supplier",
+        "Other"
+      ],
       "owner": "Hafizi",
       "bizType": "Both Physical & Online",
-      "types": [
-        "Shop / Retailer, Online Seller, Equipment Supplier, Feeder Supplier, Other"
-      ],
       "otherType": "Mobile Petting Zoo",
       "yearEst": "2023",
       "description": "Founded in 2023, we specialize in exotic pets, with a passion for pet frogs and amphibian care. We offer healthy exotic pets, captive-bred feeder mice, quality enclosures, and a wide range of accessories to help your pets thrive. Whether you?re a beginner or an experienced keeper, we?re committed to providing trusted products, expert knowledge, and excellent customer service for all your exotic pet needs.",
       "species": [
-        "Frogs & Amphibians, Other"
+        "Frogs & Amphibians",
+        "Other"
       ],
       "speciesOther": "Mobile petting zoo",
       "state": "Selangor",
       "city": "Sepang",
       "address": "27A Jalan Kenanga 1/1\nSalak Perdana Business Park\nBdr Baru Salak Tinggi\n43900 Sepang Selangor",
       "coverage": [
-        "Local Area Only, Statewide, Peninsular Malaysia"
+        "Local Area Only",
+        "Statewide",
+        "Peninsular Malaysia"
       ],
       "shipping": "Yes",
       "facebook": "https://www.facebook.com/share/1ShPG2cGHQ/?mibextid=wwXIfr",
@@ -96,21 +130,36 @@
       "phone": "014-9102308",
       "email": "thirtyoneexotic@gmail.com",
       "permits": "Maybe",
-      "verifiedWanted": "Yes",
-      "updatedAt": "2026-06-07T07:58:41.931Z"
+      "featured": false,
+      "verified": true,
+      "profilePhoto": "",
+      "coverPhoto": "",
+      "updatedAt": "2026-06-08T06:16:30.706Z"
     },
     {
+      "id": "exopet-veterinary-clinic",
+      "slug": "exopet-veterinary-clinic",
       "name": "EXOPET VETERINARY CLINIC",
+      "primaryCategory": "Veterinary Service",
+      "categories": [
+        "Veterinary Service",
+        "Educational Organization"
+      ],
       "owner": "Dr. Asyikin Haron DVM, MVM",
       "bizType": "Physical Store",
-      "types": [
-        "Veterinary Service, Educational Organization"
-      ],
       "otherType": "",
       "yearEst": "2020",
       "description": "We provide veterinary care for birds, exotic pets, and cats. Dr. Asyikin is a member of the international organisations, Association of Exotic Mammal Veterinarians (AEMV) and Association of Avian Veterinarians (AAV).",
       "species": [
-        "Geckos, Snakes, Lizard, Tortoises & Turtles, Birds, Parrots, Raptors, Exotic Mammals, Veterinary"
+        "Geckos",
+        "Snakes",
+        "Lizard",
+        "Tortoises & Turtles",
+        "Birds",
+        "Parrots",
+        "Raptors",
+        "Exotic Mammals",
+        "Veterinary"
       ],
       "speciesOther": "-",
       "state": "Johor",
@@ -129,28 +178,49 @@
       "phone": "013 735 7566 / 07 244 2321",
       "email": "exopetveterinary@gmail.com",
       "permits": "Yes",
-      "verifiedWanted": "Yes",
-      "updatedAt": "2026-06-07T07:58:41.931Z"
+      "featured": false,
+      "verified": true,
+      "profilePhoto": "",
+      "coverPhoto": "",
+      "updatedAt": "2026-06-08T06:16:30.706Z"
     },
     {
+      "id": "arp-constrictors-m-sdn-bhd",
+      "slug": "arp-constrictors-m-sdn-bhd",
       "name": "ARP CONSTRICTORS (M) SDN BHD",
+      "primaryCategory": "Breeder",
+      "categories": [
+        "Breeder",
+        "Shop / Retailer",
+        "Online Seller",
+        "Importer",
+        "Exporter",
+        "Equipment Supplier",
+        "Feeder Supplier",
+        "Boarding Service",
+        "Educational Organization"
+      ],
       "owner": "Arawin Raj Pillai",
       "bizType": "Both Physical & Online",
-      "types": [
-        "Breeder, Shop / Retailer, Online Seller, Importer, Exporter, Equipment Supplier, Feeder Supplier, Boarding Service, Educational Organization"
-      ],
       "otherType": "",
       "yearEst": "2010",
       "description": "Welcome to ARP Constrictors, the largest ball python breeder in Southeast Asia! With years of experience and passion for reptiles, we specialize in breeding high-quality ball pythons, offering a wide variety of stunning morphs for collectors, hobbyists, and breeders.\n\nBeyond ball pythons, we also provide a diverse selection of reptiles and exotic pets, ensuring that every reptile enthusiast finds the perfect companion. Our commitment to ethical breeding, top-notch care, and customer satisfaction sets us apart as a trusted name in the industry.\n\nWhether you?re a seasoned reptile keeper or just starting, ARP Constrictors is your one-stop destination for high-quality reptiles and expert advice. Explore our collection today and experience the world of exotic pets like never!",
       "species": [
-        "Geckos, Snakes, Lizard, Tortoises & Turtles, Parrots, Tarantulas, Exotic Pet Supplies"
+        "Geckos",
+        "Snakes",
+        "Lizard",
+        "Tortoises & Turtles",
+        "Parrots",
+        "Tarantulas",
+        "Exotic Pet Supplies"
       ],
       "speciesOther": "Ball? ?Python and other Exotic Pets",
       "state": "Selangor",
       "city": "Petaling Jaya",
       "address": "Exotics By ARP\n286, Jalan SS9A/2, Sungai Way, 47300, Petaling Jaya, Selangor",
       "coverage": [
-        "Statewide, Nationwide"
+        "Statewide",
+        "Nationwide"
       ],
       "shipping": "Yes",
       "facebook": "https://m.facebook.com/XoticsbyARP",
@@ -162,16 +232,24 @@
       "phone": "0127282544",
       "email": "arpconstrictors@gmail.com",
       "permits": "Yes",
-      "verifiedWanted": "Yes",
-      "updatedAt": "2026-06-07T07:58:41.931Z"
+      "featured": false,
+      "verified": true,
+      "profilePhoto": "",
+      "coverPhoto": "",
+      "updatedAt": "2026-06-08T06:16:30.706Z"
     },
     {
+      "id": "dubia-roaches-my",
+      "slug": "dubia-roaches-my",
       "name": "Dubia Roaches MY",
+      "primaryCategory": "Breeder",
+      "categories": [
+        "Breeder",
+        "Online Seller",
+        "Feeder Supplier"
+      ],
       "owner": "Zarin othman",
       "bizType": "Online Store",
-      "types": [
-        "Breeder, Online Seller, Feeder Supplier"
-      ],
       "otherType": "",
       "yearEst": "2009",
       "description": "We supply dubia roaches throughtout Malaysia.",
@@ -195,28 +273,49 @@
       "phone": "0173939983",
       "email": "Orders@dubiaroachesmalaysia.my",
       "permits": "No",
-      "verifiedWanted": "Yes",
-      "updatedAt": "2026-06-07T07:58:41.931Z"
+      "featured": false,
+      "verified": true,
+      "profilePhoto": "",
+      "coverPhoto": "",
+      "updatedAt": "2026-06-08T06:16:30.706Z"
     },
     {
+      "id": "wonder-petshop",
+      "slug": "wonder-petshop",
       "name": "WONDER PETSHOP",
+      "primaryCategory": "Breeder",
+      "categories": [
+        "Breeder",
+        "Shop / Retailer",
+        "Online Seller",
+        "Feeder Supplier",
+        "Boarding Service",
+        "Educational Organization",
+        "Other"
+      ],
       "owner": "NAUFAL HAZIQ BIN ZULKHAIRI",
       "bizType": "Both Physical & Online",
-      "types": [
-        "Breeder, Shop / Retailer, Online Seller, Feeder Supplier, Boarding Service, Educational Organization, Other"
-      ],
       "otherType": "PETTING ZOO",
       "yearEst": "2026",
       "description": "- MENJUAL MAKANAN HAIWAN DAN AKSESORI HAIWAN \n-MENJUAL HAIWAN EXOTIC DAN UNGGAS \n-EXOTIC PET BOARDING",
       "species": [
-        "Geckos, Snakes, Lizard, Tortoises & Turtles, Frogs & Amphibians, Birds, Parrots, Exotic Mammals, Exotic Pet Supplies"
+        "Geckos",
+        "Snakes",
+        "Lizard",
+        "Tortoises & Turtles",
+        "Frogs & Amphibians",
+        "Birds",
+        "Parrots",
+        "Exotic Mammals",
+        "Exotic Pet Supplies"
       ],
       "speciesOther": "No",
       "state": "Negeri Sembilan",
       "city": "KUALA PILAH",
       "address": "NO 16 JALAN JUASSEH SENTOSA 2 TAMAN JUASSEH SENTOSA 72500 KUALA PILAH NEGERI SEMBILAN",
       "coverage": [
-        "Local Area Only, Peninsular Malaysia"
+        "Local Area Only",
+        "Peninsular Malaysia"
       ],
       "shipping": "Yes",
       "facebook": "WONDER PETSHOP",
@@ -228,16 +327,23 @@
       "phone": "0173915812",
       "email": "naufalhz@gmail.com",
       "permits": "Yes",
-      "verifiedWanted": "Yes",
-      "updatedAt": "2026-06-07T07:58:41.931Z"
+      "featured": false,
+      "verified": true,
+      "profilePhoto": "",
+      "coverPhoto": "",
+      "updatedAt": "2026-06-08T06:16:30.706Z"
     },
     {
+      "id": "gecko-island",
+      "slug": "gecko-island",
       "name": "Gecko Island",
+      "primaryCategory": "Breeder",
+      "categories": [
+        "Breeder",
+        "Online Seller"
+      ],
       "owner": "Kwan",
       "bizType": "Online Store",
-      "types": [
-        "Breeder, Online Seller"
-      ],
       "otherType": "",
       "yearEst": "",
       "description": "",
@@ -261,28 +367,46 @@
       "phone": "0169904555",
       "email": "",
       "permits": "",
-      "verifiedWanted": "Yes",
-      "updatedAt": "2026-06-07T07:58:41.931Z"
+      "featured": false,
+      "verified": true,
+      "profilePhoto": "",
+      "coverPhoto": "",
+      "updatedAt": "2026-06-08T06:16:30.706Z"
     },
     {
+      "id": "avian-exotic-animal-clinic-avex-uvh-upm",
+      "slug": "avian-exotic-animal-clinic-avex-uvh-upm",
       "name": "Avian & Exotic Animal Clinic (AVEX) UVH UPM",
+      "primaryCategory": "Veterinary Service",
+      "categories": [
+        "Veterinary Service",
+        "Educational Organization"
+      ],
       "owner": "Faculty of Veterinary Medicine, Universiti Putra Malaysia / Luqman Abdul Samad",
       "bizType": "Physical Store",
-      "types": [
-        "Veterinary Service, Educational Organization"
-      ],
       "otherType": "",
       "yearEst": "",
       "description": "We provide veterinary consultation and both medical and surgical services for exotic animals. We have expertise and equipments to provide better exotic animal health and welfare.",
       "species": [
-        "Geckos, Snakes, Lizard, Tortoises & Turtles, Frogs & Amphibians, Birds, Parrots, Raptors, Exotic Mammals, Veterinary"
+        "Geckos",
+        "Snakes",
+        "Lizard",
+        "Tortoises & Turtles",
+        "Frogs & Amphibians",
+        "Birds",
+        "Parrots",
+        "Raptors",
+        "Exotic Mammals",
+        "Veterinary"
       ],
       "speciesOther": "None",
       "state": "Selangor",
       "city": "Serdang",
       "address": "Avian & Exotic Animal Clinic (AVEX), University Veterinary Hospital, Faculty of Veterinary Medicine, Universiti Putra Malaysia, 43400 Serdang, Selangor",
       "coverage": [
-        "Local Area Only, Statewide, Peninsular Malaysia"
+        "Local Area Only",
+        "Statewide",
+        "Peninsular Malaysia"
       ],
       "shipping": "No",
       "facebook": "https://www.facebook.com/share/17v15QgRPP/",
@@ -294,10 +418,11 @@
       "phone": "+60 3-9769 3955/3889/3981/3846",
       "email": "klinikhaiwankesayangan.uvh@upm.edu.my",
       "permits": "No",
-      "verifiedWanted": "Yes",
-      "updatedAt": "2026-06-07T07:58:41.932Z"
+      "featured": false,
+      "verified": true,
+      "profilePhoto": "",
+      "coverPhoto": "",
+      "updatedAt": "2026-06-08T06:16:30.706Z"
     }
-  ],
-  "total": 9,
-  "lastUpdated": "2026-06-07T07:58:41.932Z"
+  ]
 }
