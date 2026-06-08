@@ -172,9 +172,6 @@ footer a{color:var(--green);text-decoration:none}
     <input type="search" id="q" placeholder="Cari nama, spesies, lokasi…" oninput="render()"/>
   </div>
   <select id="fstate" onchange="render()"><option value="">Semua Negeri</option></select>
-<select id="fspecies" onchange="render()">
-  <option value="">Semua Spesies</option>
-</select>
   <select id="fship" onchange="render()">
     <option value="">Semua</option>
     <option value="Yes">Ada Penghantaran</option>
@@ -276,7 +273,7 @@ function igUrl(val){
 
 function buildCard(m, idx){
   const delay  = (idx%12)*45;
-  const primary = m.primaryCategory || '';
+  const primary = m.types[0]||'';
 
   let badges = '';
   if(m.state)   badges+=`<span class="badge badge-loc">📍 ${m.state}${m.city?', '+m.city:''}</span>`;
@@ -284,7 +281,7 @@ function buildCard(m, idx){
   if(m.shipping==='Yes') badges+=`<span class="badge badge-ship">✈️ Penghantaran</span>`;
   if(m.permits==='Yes')  badges+=`<span class="badge badge-permit">✅ Permit</span>`;
 
-  const typeTags = (m.categories || []).slice(0,4).map(t=>`<span class="badge badge-type">${t}</span>`).join('')
+  const typeTags = m.types.slice(0,4).map(t=>`<span class="badge badge-type">${t}</span>`).join('')
     + (m.otherType?`<span class="badge badge-type">${m.otherType}</span>`:'');
 
   const spList = [...(m.species||[]).filter(s=>s!=='Other')];
@@ -315,7 +312,7 @@ function buildCard(m, idx){
     <div class="card-hdr">
       <div class="avatar">${initials(m.name)}</div>
       <div class="card-info">
-        <div class="card-name">${m.name}${m.featured ? " ⭐" : ""}${m.verified ? " ✅" : ""}</div>
+        <div class="card-name">${m.name}</div>
         <div class="card-owner">${m.owner||''}</div>
       </div>
     </div>
@@ -331,17 +328,15 @@ function buildCard(m, idx){
 function filterMembers(){
   const q      = document.getElementById('q').value.toLowerCase();
   const fstate = document.getElementById('fstate').value;
-  const fspecies = document.getElementById('fspecies').value;
   const fship  = document.getElementById('fship').value;
   const tFilter = TAB_MAP[activeTab];
 
   return MEMBERS.filter(m=>{
-    if(tFilter && !tFilter.some(t => (m.categories || []).includes(t))) return false;
+    if(tFilter && !tFilter.some(t=>m.types.includes(t))) return false;
     if(fstate && m.state!==fstate) return false;
-    if(fspecies && !(m.species || []).includes(fspecies)) return false;
     if(fship  && m.shipping!==fship) return false;
     if(q){
-      const hay = [m.name,m.owner,m.state,m.city,m.description,...(m.categories||[]),...(m.species||[]),m.speciesOther,m.otherType].join(' ').toLowerCase();
+      const hay = [m.name,m.owner,m.state,m.city,m.description,...(m.types||[]),...(m.species||[]),m.speciesOther,m.otherType].join(' ').toLowerCase();
       if(!hay.includes(q)) return false;
     }
     return true;
@@ -360,7 +355,7 @@ function render(){
 
   if(activeTab==='all'){
     const groups = {};
-    filtered.forEach(m=>{ const k=m.primaryCategory || 'Other'; (groups[k]||(groups[k]=[])).push(m); });
+    filtered.forEach(m=>{ const k=m.types[0]||'Other'; (groups[k]||(groups[k]=[])).push(m); });
     let html='';
     const seen=new Set();
     CAT_ORDER.forEach(cat=>{
@@ -388,47 +383,46 @@ function updateCounts(){
 }
 
 function updateStats(){
-  const states=[...new Set(MEMBERS.map(m=>m.state).filter(Boolean))];
+
+  const states = [...new Set(MEMBERS.map(m => m.state).filter(Boolean))];
+
   const species = [];
 
-MEMBERS.forEach(function(m){
-
-  (m.species || []).forEach(function(sp){
-
-    if(sp && species.indexOf(sp) === -1){
-      species.push(sp);
-    }
-
+  MEMBERS.forEach(function(m){
+    (m.species || []).forEach(function(sp){
+      if(sp && species.indexOf(sp) === -1){
+        species.push(sp);
+      }
+    });
   });
 
-});.filter(Boolean);
-  document.getElementById('s-total').textContent  = MEMBERS.length;
+  document.getElementById('s-total').textContent = MEMBERS.length;
   document.getElementById('s-states').textContent = states.length;
-  document.getElementById('s-ship').textContent   = MEMBERS.filter(m=>m.shipping==='Yes').length;
-  document.getElementById('s-vet').textContent    = MEMBERS.filter(m => (m.categories || []).includes('Veterinary Service')).length;
+  document.getElementById('s-ship').textContent = MEMBERS.filter(m => m.shipping === 'Yes').length;
+  document.getElementById('s-vet').textContent = MEMBERS.filter(m => (m.categories || []).includes('Veterinary Service')).length;
 
-  // Populate state dropdown
   const sel = document.getElementById('fstate');
-  sel.innerHTML='<option value="">Semua Negeri</option>';
-  states.sort().forEach(s=>{ const o=document.createElement('option'); o.value=s; o.textContent=s; sel.appendChild(o); });
+  sel.innerHTML = '<option value="">Semua Negeri</option>';
+
+  states.sort().forEach(function(s){
+    const o = document.createElement('option');
+    o.value = s;
+    o.textContent = s;
+    sel.appendChild(o);
+  });
+
+  const spSel = document.getElementById('fspecies');
+  spSel.innerHTML = '<option value="">Semua Spesies</option>';
+
+  species.sort().forEach(function(sp){
+    const o = document.createElement('option');
+    o.value = sp;
+    o.textContent = sp;
+    spSel.appendChild(o);
+  });
+
 }
-const spSel = document.getElementById('fspecies');
 
-spSel.innerHTML =
-  '<option value="">Semua Spesies</option>';
-
-species.sort().forEach(function(sp){
-
-  const o =
-    document.createElement('option');
-
-  o.value = sp;
-
-  o.textContent = sp;
-
-  spSel.appendChild(o);
-
-});
 function formatDate(iso){
   if(!iso) return '';
   const d=new Date(iso);
