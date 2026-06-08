@@ -1,7 +1,7 @@
 {
   "version": "2.0",
-  "total": 10,
-  "lastUpdated": "2026-06-08T13:03:50.275Z",
+  "total": 11,
+  "lastUpdated": "2026-06-08T19:56:18.457Z",
   "members": [
     {
       "id": "abang-dragon",
@@ -42,7 +42,7 @@
       "verified": false,
       "profilePhoto": "",
       "coverPhoto": "",
-      "updatedAt": "2026-06-08T13:03:50.274Z"
+      "updatedAt": "2026-06-08T19:56:18.456Z"
     },
     {
       "id": "scapelab",
@@ -88,7 +88,7 @@
       "verified": true,
       "profilePhoto": "",
       "coverPhoto": "",
-      "updatedAt": "2026-06-08T13:03:50.275Z"
+      "updatedAt": "2026-06-08T19:56:18.457Z"
     },
     {
       "id": "thirtyone-exotics",
@@ -134,7 +134,7 @@
       "verified": true,
       "profilePhoto": "",
       "coverPhoto": "",
-      "updatedAt": "2026-06-08T13:03:50.275Z"
+      "updatedAt": "2026-06-08T19:56:18.457Z"
     },
     {
       "id": "exopet-veterinary-clinic",
@@ -182,7 +182,7 @@
       "verified": true,
       "profilePhoto": "",
       "coverPhoto": "",
-      "updatedAt": "2026-06-08T13:03:50.275Z"
+      "updatedAt": "2026-06-08T19:56:18.457Z"
     },
     {
       "id": "arp-constrictors-m-sdn-bhd",
@@ -236,7 +236,7 @@
       "verified": true,
       "profilePhoto": "",
       "coverPhoto": "",
-      "updatedAt": "2026-06-08T13:03:50.275Z"
+      "updatedAt": "2026-06-08T19:56:18.457Z"
     },
     {
       "id": "dubia-roaches-my",
@@ -277,7 +277,7 @@
       "verified": true,
       "profilePhoto": "",
       "coverPhoto": "",
-      "updatedAt": "2026-06-08T13:03:50.275Z"
+      "updatedAt": "2026-06-08T19:56:18.457Z"
     },
     {
       "id": "wonder-petshop",
@@ -331,7 +331,7 @@
       "verified": true,
       "profilePhoto": "",
       "coverPhoto": "",
-      "updatedAt": "2026-06-08T13:03:50.275Z"
+      "updatedAt": "2026-06-08T19:56:18.457Z"
     },
     {
       "id": "gecko-island",
@@ -371,7 +371,7 @@
       "verified": true,
       "profilePhoto": "",
       "coverPhoto": "",
-      "updatedAt": "2026-06-08T13:03:50.275Z"
+      "updatedAt": "2026-06-08T19:56:18.457Z"
     },
     {
       "id": "avian-exotic-animal-clinic-avex-uvh-upm",
@@ -422,7 +422,7 @@
       "verified": true,
       "profilePhoto": "",
       "coverPhoto": "",
-      "updatedAt": "2026-06-08T13:03:50.275Z"
+      "updatedAt": "2026-06-08T19:56:18.457Z"
     },
     {
       "id": "iesyara-exotic-feeder",
@@ -465,7 +465,53 @@
       "verified": true,
       "profilePhoto": "",
       "coverPhoto": "",
-      "updatedAt": "2026-06-08T13:03:50.275Z"
+      "updatedAt": "2026-06-08T19:56:18.457Z"
+    },
+    {
+      "id": "exotic-s-dream-michael",
+      "slug": "exotic-s-dream-michael",
+      "name": "Exotic's Dream / Michael",
+      "primaryCategory": "Breeder",
+      "categories": [
+        "Breeder",
+        "Online Seller"
+      ],
+      "owner": "Michael",
+      "bizType": "Online Store",
+      "otherType": "",
+      "yearEst": "2011",
+      "description": "Breeding exotic pets in small scale in proper method",
+      "species": [
+        "Geckos",
+        "Lizard",
+        "Tarantulas",
+        "Arachnids",
+        "Insects",
+        "Other"
+      ],
+      "speciesOther": "Cats, dogs, chickens & quails",
+      "state": "Perak",
+      "city": "Ipoh",
+      "address": "",
+      "coverage": [
+        "Local Area Only",
+        "Peninsular Malaysia"
+      ],
+      "shipping": "Selected species",
+      "facebook": "https://www.facebook.com/share/1BP6DgX9kL/",
+      "instagram": "https://www.instagram.com/exotics.dream?igsh=MWMybHUzZHo5aThvZQ==",
+      "tiktok": "https://www.tiktok.com/@michaelponniah?_r=1&_t=ZS-9731YWNFCaq",
+      "threads": "",
+      "website": "",
+      "primaryLink": "https://www.instagram.com/exotics.dream?igsh=MWMybHUzZHo5aThvZQ==",
+      "phone": "0104630433",
+      "email": "michaelponniahlenovo89@gmail.com",
+      "permits": "No",
+      "featured": false,
+      "verified": true,
+      "profilePhoto": "",
+      "coverPhoto": "",
+      "updatedAt": "2026-06-08T19:56:18.457Z"
     }
   ]
 }
