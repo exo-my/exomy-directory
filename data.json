@@ -1,7 +1,7 @@
 {
   "version": "2.0",
-  "total": 11,
-  "lastUpdated": "2026-06-08T19:56:18.457Z",
+  "total": 12,
+  "lastUpdated": "2026-06-11T15:37:17.483Z",
   "members": [
     {
       "id": "abang-dragon",
@@ -42,7 +42,7 @@
       "verified": false,
       "profilePhoto": "",
       "coverPhoto": "",
-      "updatedAt": "2026-06-08T19:56:18.456Z"
+      "updatedAt": "2026-06-11T15:37:17.482Z"
     },
     {
       "id": "scapelab",
@@ -88,7 +88,7 @@
       "verified": true,
       "profilePhoto": "",
       "coverPhoto": "",
-      "updatedAt": "2026-06-08T19:56:18.457Z"
+      "updatedAt": "2026-06-11T15:37:17.482Z"
     },
     {
       "id": "thirtyone-exotics",
@@ -134,7 +134,7 @@
       "verified": true,
       "profilePhoto": "",
       "coverPhoto": "",
-      "updatedAt": "2026-06-08T19:56:18.457Z"
+      "updatedAt": "2026-06-11T15:37:17.482Z"
     },
     {
       "id": "exopet-veterinary-clinic",
@@ -182,7 +182,7 @@
       "verified": true,
       "profilePhoto": "",
       "coverPhoto": "",
-      "updatedAt": "2026-06-08T19:56:18.457Z"
+      "updatedAt": "2026-06-11T15:37:17.482Z"
     },
     {
       "id": "arp-constrictors-m-sdn-bhd",
@@ -236,7 +236,7 @@
       "verified": true,
       "profilePhoto": "",
       "coverPhoto": "",
-      "updatedAt": "2026-06-08T19:56:18.457Z"
+      "updatedAt": "2026-06-11T15:37:17.482Z"
     },
     {
       "id": "dubia-roaches-my",
@@ -277,7 +277,7 @@
       "verified": true,
       "profilePhoto": "",
       "coverPhoto": "",
-      "updatedAt": "2026-06-08T19:56:18.457Z"
+      "updatedAt": "2026-06-11T15:37:17.482Z"
     },
     {
       "id": "wonder-petshop",
@@ -331,7 +331,7 @@
       "verified": true,
       "profilePhoto": "",
       "coverPhoto": "",
-      "updatedAt": "2026-06-08T19:56:18.457Z"
+      "updatedAt": "2026-06-11T15:37:17.483Z"
     },
     {
       "id": "gecko-island",
@@ -371,7 +371,7 @@
       "verified": true,
       "profilePhoto": "",
       "coverPhoto": "",
-      "updatedAt": "2026-06-08T19:56:18.457Z"
+      "updatedAt": "2026-06-11T15:37:17.483Z"
     },
     {
       "id": "avian-exotic-animal-clinic-avex-uvh-upm",
@@ -422,7 +422,7 @@
       "verified": true,
       "profilePhoto": "",
       "coverPhoto": "",
-      "updatedAt": "2026-06-08T19:56:18.457Z"
+      "updatedAt": "2026-06-11T15:37:17.483Z"
     },
     {
       "id": "iesyara-exotic-feeder",
@@ -465,7 +465,7 @@
       "verified": true,
       "profilePhoto": "",
       "coverPhoto": "",
-      "updatedAt": "2026-06-08T19:56:18.457Z"
+      "updatedAt": "2026-06-11T15:37:17.483Z"
     },
     {
       "id": "exotic-s-dream-michael",
@@ -511,7 +511,63 @@
       "verified": true,
       "profilePhoto": "",
       "coverPhoto": "",
-      "updatedAt": "2026-06-08T19:56:18.457Z"
+      "updatedAt": "2026-06-11T15:37:17.483Z"
+    },
+    {
+      "id": "azys-pets-trading",
+      "slug": "azys-pets-trading",
+      "name": "Azys Pets Trading",
+      "primaryCategory": "Breeder",
+      "categories": [
+        "Breeder",
+        "Shop / Retailer",
+        "Online Seller",
+        "Equipment Supplier",
+        "Feeder Supplier",
+        "Boarding Service",
+        "Educational Organization"
+      ],
+      "owner": "Abdul Aziz Ramli",
+      "bizType": "Both Physical & Online",
+      "otherType": "",
+      "yearEst": "2021",
+      "description": "Pet Shop.. \n- selling feeder (mealworms, superworm, earthworm, dubia, mice, rat, quail, feeder fish)\n- selling equipment, accessories, cage, aquarium, food, vitamins & etc.\n- selling birds, fish, chicken, pets & exotic animal \n- pets hotel",
+      "species": [
+        "Geckos",
+        "Snakes",
+        "Lizard",
+        "Tortoises & Turtles",
+        "Frogs & Amphibians",
+        "Birds",
+        "Parrots",
+        "Exotic Mammals",
+        "Aquatic Species",
+        "Tarantulas",
+        "Insects",
+        "Exotic Pet Supplies"
+      ],
+      "speciesOther": "Chicken",
+      "state": "Perak",
+      "city": "Seri Iskandar",
+      "address": "No 6, Jalan PP2, Bandar Universiti \n32610, Seri Iskandar, Perak",
+      "coverage": [
+        "Statewide"
+      ],
+      "shipping": "Yes",
+      "facebook": "https://www.facebook.com/Azyspetstrading/",
+      "instagram": "https://www.instagram.com/azyspetstrading/",
+      "tiktok": "https://vt.tiktok.com/ZSJFB6gt5/",
+      "threads": "",
+      "website": "https://linktr.ee/Azyspetstrading",
+      "primaryLink": "https://linktr.ee/Azyspetstrading",
+      "phone": "0178615732",
+      "email": "azys.pc@gmail.com",
+      "permits": "Yes",
+      "featured": false,
+      "verified": true,
+      "profilePhoto": "",
+      "coverPhoto": "",
+      "updatedAt": "2026-06-11T15:37:17.483Z"
     }
   ]
 }
